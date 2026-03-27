@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+
+  /* Fonds */
+  --color-bg-main: #040406;
+  --color-bg-card: #22211E;
+
+  /* Couleurs d'action */
+  --color-red-primary: #751A1E;
+  --color-red-hover: #91252A;
+  --color-red-border: #58191B;
+
+  /* Textes */
+  --color-text-title: #FFFFFF;
+  --color-text-main: #A7A39F;
+  --color-text-bordeaux: #751A1E;
+
+
+}
