@@ -6,7 +6,7 @@
   --color-bg-main: #040406;
   --color-bg-card: #22211E;
 
-  /* Couleurs d'action */
+  /* Couleurs accent */
   --color-red-primary: #751A1E;
   --color-red-hover: #91252A;
   --color-red-border: #58191B;
@@ -17,4 +17,30 @@
   --color-text-bordeaux: #751A1E;
 
 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #22211E;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #751A1E;
 }
