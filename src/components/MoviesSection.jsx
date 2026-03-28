@@ -16,7 +16,7 @@ export const MoviesSection = ({ onCardClick }) => {
   const [loading, setLoading] = useState(true); // État de chargement
   const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
-  // Détection Mobile
+  // Mobile
   const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
 
   useEffect(() => {
@@ -62,7 +62,6 @@ export const MoviesSection = ({ onCardClick }) => {
               <motion.div
                 key={movie.id}
                 onClick={() => onCardClick(movie)}
-                // Sur mobile
                 initial={isMobile ? { opacity: 0 } : { opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: isMobile ? 0 : index * 0.1 }}
