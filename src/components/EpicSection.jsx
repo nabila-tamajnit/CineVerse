@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { MovieCard } from "./MovieCard";
 
 const epicList = [
-  { id: 1399, title: "Game of Thrones", type: "tv" },
   { id: 94997, title: "House of the Dragon", type: "tv" },
-  { id: 44217, title: "Vikings", type: "tv" }, 
+  { id: 44217, title: "Vikings", type: "tv" },
+  { id: 63333, title: "The Last Kingdom", type: "tv" },
 ];
 
 export const EpicSection = ({ onCardClick }) => {
