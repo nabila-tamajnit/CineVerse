@@ -13,7 +13,11 @@ const moviesList = [
 
 export const MoviesSection = ({ onCardClick }) => {
   const [enrichedMovies, setEnrichedMovies] = useState([]);
+  const [loading, setLoading] = useState(true); // État de chargement
   const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
+
+  // Détection Mobile
+  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
 
   useEffect(() => {
     const fetchMovies = async () => {
@@ -25,6 +29,8 @@ export const MoviesSection = ({ onCardClick }) => {
         setEnrichedMovies(responses.map(res => res.data));
       } catch (error) {
         console.error("Erreur API Home:", error);
+      } finally {
+        setLoading(false);
       }
     };
     fetchMovies();
@@ -32,38 +38,47 @@ export const MoviesSection = ({ onCardClick }) => {
 
   return (
     <section id="movies-section" className="px-6 py-24 bg-bg-main">
-      <motion.div 
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.6 }}
-        className="max-w-7xl mx-auto"
-      >
-        <h2 className="text-3xl font-bold text-text-title border-l-4 border-red-primary pl-3 mb-12 uppercase tracking-tight">
+      <div className="max-w-7xl mx-auto">
+        {/* ----- Titre ----- */}
+        <motion.h2 
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="text-3xl font-bold text-text-title border-l-4 border-red-primary pl-3 mb-12 uppercase tracking-tight"
+        >
           Films Incontournables
-        </h2>
+        </motion.h2>
 
+        {/* ----- Card ----- */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
-          {enrichedMovies.map((movie, index) => (
-            <motion.div
-              key={movie.id}
-              onClick={() => onCardClick(movie)}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -10, transition: { duration: 0.2 } }}
-              viewport={{ once: true }}
-              className="cursor-pointer"
-            >
-              <MovieCard 
-                title={movie.title}
-                image={`https://image.tmdb.org/t/p/w342${movie.poster_path}`}
-                description={movie.overview}
-              />
-            </motion.div>
-          ))}
+          {loading ? (
+            /* AFFICHAGE */
+            [...Array(5)].map((_, i) => (
+              <div key={i} className="bg-bg-card/50 rounded-xl h-[500px] animate-pulse border border-red-border/10" />
+            ))
+          ) : (
+            /* AFFICHAGE RÉEL */
+            enrichedMovies.map((movie, index) => (
+              <motion.div
+                key={movie.id}
+                onClick={() => onCardClick(movie)}
+                // Sur mobile
+                initial={isMobile ? { opacity: 0 } : { opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: isMobile ? 0 : index * 0.1 }}
+                whileHover={!isMobile ? { y: -10 } : {}}
+                className="cursor-pointer"
+              >
+                <MovieCard 
+                  title={movie.title}
+                  image={`https://image.tmdb.org/t/p/w342${movie.poster_path}`}
+                  description={movie.overview}
+                />
+              </motion.div>
+            ))
+          )}
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };
