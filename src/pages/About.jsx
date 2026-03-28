@@ -5,7 +5,7 @@ export const About = () => {
         <div className="bg-bg-main min-h-screen">
 
             {/* ========== HERO ========== */}
-            <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+            <section className="relative h-screen flex items-center justify-center overflow-hidden">
                 <motion.div
                     initial={{ scale: 1.1, opacity: 0 }}
                     animate={{ scale: 1, opacity: 0.4 }}
