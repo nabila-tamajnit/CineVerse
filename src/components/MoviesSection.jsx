@@ -57,7 +57,7 @@ export const MoviesSection = ({ onCardClick }) => {
             >
               <MovieCard 
                 title={movie.title}
-                image={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                image={`https://image.tmdb.org/t/p/w342${movie.poster_path}`}
                 description={movie.overview}
               />
             </motion.div>

@@ -95,7 +95,7 @@ export const EpicSection = ({ onCardClick }) => {
             >
               <MovieCard 
                 title={item.name || item.title}
-                image={`https://image.tmdb.org/t/p/w500${item.poster_path}`}
+                image={`https://image.tmdb.org/t/p/w342${item.poster_path}`}
                 description={item.overview}
               />
             </motion.div>

@@ -69,7 +69,7 @@ export const MovieModal = ({ movie, onClose }) => {
                                 <img
                                     src={
                                         data.poster_path
-                                            ? `https://image.tmdb.org/t/p/w500${data.poster_path}`
+                                            ? `https://image.tmdb.org/t/p/w342${data.poster_path}`
                                             : "https://placehold.co/500x750?text=No+Image"
                                     }
                                     alt={data.title || data.name}
