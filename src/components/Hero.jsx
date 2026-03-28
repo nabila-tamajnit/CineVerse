@@ -1,4 +1,12 @@
+import { motion } from "framer-motion";
+
 export const Hero = () => {
+  const scrollToExplore = () => {
+    const element = document.getElementById("movies-section");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section
       className="relative h-[95vh] flex items-center justify-center text-center px-6 overflow-hidden"
@@ -10,8 +18,13 @@ export const Hero = () => {
     >
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-bg-main" />
 
-      <div className="relative z-10 max-w-3xl">
-        <h1 className="text-6xl md:text-7xl font-extrabold mb-6 tracking-tighter"> 
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="relative z-10"
+      >
+        <h1 className="text-6xl md:text-7xl font-extrabold mb-6 tracking-tighter">
           <span className="text-white">Cine</span>
           <span className="text-red-primary">Verse</span>
         </h1>
@@ -19,16 +32,19 @@ export const Hero = () => {
         <p className="text-xl md:text-2xl text-text-title font-medium mb-4">
           L'odyssée des récits qui marquent l'histoire
         </p>
-        
+
         <p className="text-text-main max-w-lg mx-auto mb-10 text-lg leading-relaxed">
-          Explore des mondes légendaires, des batailles épiques et des sagas 
+          Explore des mondes légendaires, des batailles épiques et des sagas
           inoubliables qui font vibrer le cinéma mondial.
         </p>
 
-        <button className="bg-red-primary hover:bg-red-hover text-white px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-color-primary/20 cursor-pointer">
+        <button
+          onClick={scrollToExplore}
+          className="bg-red-primary hover:bg-red-hover text-white px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-color-primary/20 cursor-pointer"
+        >
           Commencer l'exploration
         </button>
-      </div>
+      </motion.div>
 
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
         <div className="w-1 h-12 rounded-full bg-gradient-to-b from-color-primary to-transparent" />
