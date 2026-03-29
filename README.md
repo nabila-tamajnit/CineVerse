@@ -1,13 +1,8 @@
-<div align="center">
-  <h1>🎬 CineVerse</h1>
-  <p>L'odyssée des récits qui marquent l'histoire. Une plateforme immersive pour explorer les films et séries du monde entier.</p>
-  
-  <img src="https://github.com/user-attachments/assets/f5ce0bd8-8ca9-451b-8909-68556f8a0e60" width="800" alt="Aperçu CineVerse">
+🎬 CineVerse
 
-  <br />
+> L'odyssée des récits qui marquent l'histoire. Une plateforme immersive pour explorer les films et séries du monde entier.
 
-  <a href="https://cineverse-tonnom.vercel.app">Voir la Démo Live</a>
-</div>
+![Lien vers la Démo live]()
 
 ![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
