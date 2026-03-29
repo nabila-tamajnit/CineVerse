@@ -3,10 +3,10 @@
 
 [Lien vers la Démo Live](https://cineverse-explorer.vercel.app/)
 
-![React](https://img.shields.io)
-![Tailwind CSS](https://img.shields.io)
-![Framer Motion](https://img.shields.io)
-![TMDB API](https://img.shields.io)
+![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/-Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+![TMDB](https://img.shields.io/badge/-TMDB-01B4E4?style=for-the-badge&logo=themoviedatabase&logoColor=white)
 
 ## ✨ Fonctionnalités
 - **Recherche en temps réel** : Système de recherche dynamique avec "Debounce" pour optimiser les appels API.
