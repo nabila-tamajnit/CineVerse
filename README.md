@@ -4,10 +4,17 @@
 
 [![Demo Live](https://img.shields.io/badge/-Demo%20Live-000000?style=for-the-badge)](https://cineverse-explorer.vercel.app/)
 
+<br>
+
 ![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/-Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 ![TMDB](https://img.shields.io/badge/-TMDB-01B4E4?style=for-the-badge&logo=themoviedatabase&logoColor=white)
+
+---
+
+### 🎥 Démonstration
+<video src="https://github.com/user-attachments/assets/a7e36123-1007-4ef9-b8f2-a412e24c2c12" width="600" controls></video>
 
 ---
 
@@ -16,11 +23,6 @@
 - **Exploration Multi-catégories** : Sections dédiées aux films cultes, séries légendaires et univers épiques.
 - **Fiches Détaillées** : Modales immersives affichant synopsis, notes, dates de sortie et genres.
 - **Expérience Fluide** : Utilisation de Skeleton Loaders pour un chargement visuel élégant sur mobile.
-
----
-
-### 🎥 Démonstration
-<video src="https://github.com/user-attachments/assets/a7e36123-1007-4ef9-b8f2-a412e24c2c12" width="600" controls></video>
 
 ---
 
