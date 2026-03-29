@@ -37,7 +37,7 @@
 ## 🛠️ Installation
 ```bash
 # Cloner le projet
-git clone https://github.com
+git clone https://github.com/nabila-tamajnit/CineVerse
 
 # Installer les dépendances
 npm install
