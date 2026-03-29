@@ -1,12 +1,20 @@
-# 🎬 CineVerse
-> L'odyssée des récits qui marquent l'histoire. Une plateforme immersive pour explorer les films et séries du monde entier.
+<div align="center">
+  <h1>🎬 CineVerse</h1>
+  <p>L'odyssée des récits qui marquent l'histoire. Une plateforme immersive pour explorer les films et séries du monde entier.</p>
+  
+  <img src="https://github.com/user-attachments/assets/f5ce0bd8-8ca9-451b-8909-68556f8a0e60" width="800" alt="Aperçu CineVerse">
 
-[Lien vers la Démo Live](https://cineverse-explorer.vercel.app/)
+  <br />
+
+  <a href="https://cineverse-tonnom.vercel.app">Voir la Démo Live</a>
+</div>
 
 ![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/-Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 ![TMDB](https://img.shields.io/badge/-TMDB-01B4E4?style=for-the-badge&logo=themoviedatabase&logoColor=white)
+
+---
 
 ## ✨ Fonctionnalités
 - **Recherche en temps réel** : Système de recherche dynamique avec "Debounce" pour optimiser les appels API.
@@ -14,10 +22,19 @@
 - **Fiches Détaillées** : Modales immersives affichant synopsis, notes, dates de sortie et genres.
 - **Expérience Fluide** : Utilisation de Skeleton Loaders pour un chargement visuel élégant sur mobile.
 
+---
+
+### 🎥 Démonstration
+<video src="https://github.com/user-attachments/assets/a7e36123-1007-4ef9-b8f2-a412e24c2c12" width="800" controls></video>
+
+---
+
 ## 💡 Compétences clés
 - **Consommation d'API REST** : Maîtrise d'Axios pour la récupération de données asynchrones.
 - **UI/UX Design** : Thème sombre (Dark Mode) cohérent avec micro-interactions fluides.
 - **Performance Frontend** : Optimisation du poids des images et gestion intelligente du scroll.
+
+---
 
 ## 🛠️ Installation
 ```bash
