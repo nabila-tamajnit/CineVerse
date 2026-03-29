@@ -2,7 +2,7 @@
 
 > L'odyssée des récits qui marquent l'histoire. Une plateforme immersive pour explorer les films et séries du monde entier.
 
-![Lien vers la Démo live](https://cineverse-explorer.vercel.app/)
+[![Demo Live](https://img.shields.io/badge/-Demo%20Live-000000?style=for-the-badge)](https://cineverse-explorer.vercel.app/)
 
 ![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
