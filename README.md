@@ -1,16 +1,37 @@
-# React + Vite
+# 🎬 CineVerse
+> L'odyssée des récits qui marquent l'histoire. Une plateforme immersive pour explorer les films et séries du monde entier.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Lien vers la Démo Live](https://cineverse-explorer.vercel.app/)
 
-Currently, two official plugins are available:
+![React](https://img.shields.io)
+![Tailwind CSS](https://img.shields.io)
+![Framer Motion](https://img.shields.io)
+![TMDB API](https://img.shields.io)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Fonctionnalités
+- **Recherche en temps réel** : Système de recherche dynamique avec "Debounce" pour optimiser les appels API.
+- **Exploration Multi-catégories** : Sections dédiées aux films cultes, séries légendaires et univers épiques.
+- **Fiches Détaillées** : Modales immersives affichant synopsis, notes, dates de sortie et genres.
+- **Expérience Fluide** : Utilisation de Skeleton Loaders pour un chargement visuel élégant sur mobile.
 
-## React Compiler
+## 💡 Compétences clés
+- **Consommation d'API REST** : Maîtrise d'Axios pour la récupération de données asynchrones.
+- **UI/UX Design** : Thème sombre (Dark Mode) cohérent avec micro-interactions fluides.
+- **Performance Frontend** : Optimisation du poids des images et gestion intelligente du scroll.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Installation
+```bash
+# Cloner le projet
+git clone https://github.com
 
-## Expanding the ESLint configuration
+# Installer les dépendances
+npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Lancer le serveur local
+npm run dev
+```
+
+---
+
+## 👤 Auteur
+**Nabila Tamajnit** - Étudiante Full Stack @ Interface3
