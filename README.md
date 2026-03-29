@@ -2,7 +2,7 @@
   <h1>🎬 CineVerse</h1>
   <p>L'odyssée des récits qui marquent l'histoire. Une plateforme immersive pour explorer les films et séries du monde entier.</p>
   
-  <img src="https://github.com/user-attachments/assets/f5ce0bd8-8ca9-451b-8909-68556f8a0e60" width="800" alt="Aperçu CineVerse">
+  <video src="https://github.com/user-attachments/assets/a7e36123-1007-4ef9-b8f2-a412e24c2c12" width="800" controls></video>
 
   <br />
 
