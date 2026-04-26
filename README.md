@@ -34,19 +34,5 @@
 
 ---
 
-## 🛠️ Installation
-```bash
-# Cloner le projet
-git clone https://github.com/nabila-tamajnit/CineVerse
-
-# Installer les dépendances
-npm install
-
-# Lancer le serveur local
-npm run dev
-```
-
----
-
 ## 👤 Auteur
 **Nabila Tamajnit** - Étudiante Full Stack @ Interface3
